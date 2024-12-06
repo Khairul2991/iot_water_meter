@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:iot_water_meter/dashboard_user.dart';
-import 'package:iot_water_meter/complete_profile.dart';
-import 'package:iot_water_meter/pick_id.dart';
+import 'package:iot_water_meter/officer/dashboard_admin.dart';
+import 'package:iot_water_meter/user/dashboard_user.dart';
+import 'package:iot_water_meter/user/complete_profile.dart';
 import 'package:iot_water_meter/register_page.dart';
 import 'common/app_colors.dart';
 
@@ -90,21 +90,21 @@ class MyHomePage extends StatelessWidget {
                 foregroundColor: Colors.white, backgroundColor: AppColors.black1, // Warna teks tombol
               ),
               child: const Text(
-                'available tools',
+                'dashboard user',
                 style: TextStyle(fontSize: 16),),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const PickId()),
+                  MaterialPageRoute(builder: (context) => const DashboardAdmin()),
                 );
               },
               style: ElevatedButton.styleFrom(
                 foregroundColor: Colors.white, backgroundColor: AppColors.black1, // Warna teks tombol
               ),
               child: const Text(
-                'pick id',
+                'dashboard admin',
                 style: TextStyle(fontSize: 16),),
             ),
 

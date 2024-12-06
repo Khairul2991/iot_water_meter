@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:iot_water_meter/dashboard_user.dart';
+import 'package:iot_water_meter/user/dashboard_user.dart';
 
-import 'common/app_colors.dart';
+import '../common/app_colors.dart';
 
 class CompleteProfile extends StatelessWidget {
   const CompleteProfile({super.key});
